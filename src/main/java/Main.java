@@ -55,6 +55,6 @@ public class Main {
                 }
 
         } while (invalidChoice);
-
+        in.close();
     }
 }
