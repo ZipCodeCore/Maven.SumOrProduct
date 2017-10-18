@@ -18,7 +18,7 @@ public class Main {
         if("product".equalsIgnoreCase(productSum)){
             total = 1;
             for (int i = 1; i <= input; i++) {
-                total = total * i;
+                total *= i;
             }
         }else if ("sum".equalsIgnoreCase(productSum)){
             for (int i = 1; i <= input; i++) {
