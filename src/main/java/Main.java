@@ -15,7 +15,6 @@ public class Main {
         }while(input<=0);
         System.out.println("Would you like the product or the sum off all the numbers before "+input+ "? >>");
         String  productSum = in.next();
-        String finalString = "";
         if("product".equalsIgnoreCase(productSum)){
             total = 1;
             for (int i = 1; i <= input; i++) {
