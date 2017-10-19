@@ -22,6 +22,10 @@ public class Main {
                 for(int i=1;i<=num;i++)
                   mul*=i;
                 System.out.println("Multiplied result "+mul);
+                break;
+            default:
+                System.out.println("Wrong entry press 's' or 'm'");
+                break;
         }
     }
 }
