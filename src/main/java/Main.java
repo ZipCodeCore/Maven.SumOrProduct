@@ -9,7 +9,7 @@ public class Main {
         Scanner newScan = new Scanner(System.in);
         Scanner newScan2 = new Scanner(System.in);
 
-        System.out.println("Enter 1 to multiply enter 2: ");
+        System.out.println("Enter 1 to Add, 2 to Multiply: ");
 
         int usrChoice = newScan2.nextInt();
 
