@@ -9,34 +9,26 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Please enter a number: ");
-        // 3. Use the Scanner to read a line of text from the user.
-        String userInput = input.nextLine();
+        int personNum = input.nextInt();
 
         System.out.println("Would you like to add or multiply? ");
-        // 3. Use the Scanner to read a line of text from the user.
-        String computeInput = input.nextLine();
+        String computeInput = input.next();
 
         if(computeInput.equalsIgnoreCase("add")) {
-
-            int numInput = Integer.parseInt(userInput);
             int sum = 0;
 
-            for (int i = 1; i <= numInput; i++) {
-
+            for (int i = 1; i <= personNum; i++) {
                 sum += i;
              }
-            System.out.println(sum);
-
+             System.out.println(sum);
         } else if (computeInput.equalsIgnoreCase("multiply")) {
+            int multTotal = 1;
 
-            int numInput = Integer.parseInt(userInput);
-            int sum = 1;
+            for (int i = 1; i <= personNum; i++) {
 
-            for (int i = 1; i <= numInput; i++) {
-
-                sum *= i;
+                multTotal *= i;
             }
-            System.out.println(sum);
+            System.out.println(multTotal);
 
         }
 
