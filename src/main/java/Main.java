@@ -9,10 +9,17 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Please enter a number: ");
+<<<<<<< HEAD
         int personNum = input.nextInt();
 
         System.out.println("Would you like to add or multiply? ");
         String computeInput = input.next();
+=======
+        String userInput = input.nextLine();
+
+        System.out.println("Would you like to add or multiply? ");
+        String computeInput = input.nextLine();
+>>>>>>> f4f28d38976360eb699a92cc8d69d0c2bfefcb0f
 
         if(computeInput.equalsIgnoreCase("add")) {
             int sum = 0;
