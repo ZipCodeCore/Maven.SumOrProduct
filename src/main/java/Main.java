@@ -14,14 +14,29 @@ public class Main {
 
         int userNumber = scanNum.nextInt();
 
-        System.out.println("Would you like to multiply or add " + userNumber + " to 1.... please enter multiply or add: ");
+        System.out.println("Would you like to multiply or add " + userNumber + " between 1.... please enter multiply or add: ");
 
         String userString = scanString.nextLine();
 
+        int totalSum = 0;
+
         if (userString.equals("add")) {
-            System.out.println("Your total is: " + (userNumber + 1));
-        } else if (userString.equals("multiply")) {
-            System.out.println("Your total is: " + (userNumber * 1));
+            for (int i = 0; i <= userNumber; i++) {
+                totalSum += i;
+            }
+
+            System.out.println("Your added total is: " + (totalSum));
+
+        } else if (userString.equals("multiply")){
+
+            int totalProduct = 0;
+                for (int x = 1; x <= userNumber; x++){
+                    totalProduct = (userNumber * x) + totalProduct;
+            }
+
+            System.out.println("Your multiplied total is: " + totalProduct);
+
+
         }
 
     }
