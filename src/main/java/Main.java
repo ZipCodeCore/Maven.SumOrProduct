@@ -1,10 +1,11 @@
-/**
+import java.util.Scanner;
+@SuppressWarnings("all")
+/*
  * Created by iyasuwatts on 10/17/17.
  */
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
+        //TODO: protect against over/underflow
         int userInt;
         int userChoice;
         Scanner in = new Scanner(System.in);
@@ -31,7 +32,7 @@ public class Main {
         System.out.println("byebye");
     }
 
-    public static Integer add(int input) {
+    private static Integer add(int input) {
         int sum = 0; //probably should validate against overflow...if there's time
         for (int i = 1;i<=input;i++) {
            sum += i;
@@ -39,7 +40,7 @@ public class Main {
         return sum;
     }
 
-    public static Integer multiply(int input) {
+    private static Integer multiply(int input) {
         int product = 1;
         for (int i=1;i<=input;i++) {
             product *= i; //this definitely should be protected against overflow..
