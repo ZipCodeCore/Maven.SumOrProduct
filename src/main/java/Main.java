@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
 
@@ -21,24 +21,25 @@ public class Main {
         String choice = in.nextLine();
 
 
-        //while (numberEntered > 0) {
-        if (choice.equalsIgnoreCase("sum")) {
-            while (numberEntered > 0) {
-                sumOfNumberEntered += numberEntered;
-                numberEntered--;
-            }
-            System.out.println(sumOfNumberEntered);
-        } else if (choice.equalsIgnoreCase("product")) {
-            while (numberEntered > 0) {
-                prodOfNumberEntered *= numberEntered;
-                numberEntered--;
-            }
-            System.out.println(prodOfNumberEntered);
-        } else if (!"sum".equalsIgnoreCase(choice) || !"product".equalsIgnoreCase(choice)){
+        while (numberEntered > 0) {
+            if (choice.equalsIgnoreCase("sum")) {
+                while (numberEntered > 0) {
+                    sumOfNumberEntered += numberEntered;
+                    numberEntered--;
+                }
+                System.out.println(sumOfNumberEntered);
+            } else if (choice.equalsIgnoreCase("product")) {
+                while (numberEntered > 0) {
+                    prodOfNumberEntered *= numberEntered;
+                    numberEntered--;
+                }
+                System.out.println(prodOfNumberEntered);
+            } else {
                 System.out.println("Invalid entry.  Program ended.");
 
             }
 
         }
-        }
+    }
 
+}
