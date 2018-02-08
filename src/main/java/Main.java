@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Dear user please choose a number.");
         int userNum = amy.nextInt();
 
-        System.out.println("Hello dear user. Would you like to do some addition or some repeated addition? Please type" +
+        System.out.println("Ok. So glad you can follow directions. Would you like to do some addition or some repeated addition? Please type" +
                 " 'add' for addition and 'repeated add' for repeated addition. NO OTHER ANSWERS WILL BE ACCEPTED.");
 
         amy.nextLine();
