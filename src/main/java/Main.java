@@ -24,6 +24,8 @@ public class Main {
         String nAsAString = sn.nextLine();
         int n  = Integer.parseInt(nAsAString);
 
+
+
         System.out.println("Enter an option of \"sum\" or \"product: \"");
         String choice = sn.nextLine();
 
