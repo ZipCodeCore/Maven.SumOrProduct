@@ -19,25 +19,41 @@ public class Main {
 
         if (operator.equals("add"))
         {
-            while (i <= n)
-            {
-                result += i;
-                i++;
-            }
+            result = getSum(n);
         }
 
         if (operator.equals("multiply"))
         {
-            result = 1;
-
-            while (i <= n)
-            {
-                result *= i;
-                i++;
-            }
+            result = getProduct(n);
         }
 
         System.out.println(result);
+    }
+
+    public static int getSum(int n) {
+        int i = 1;
+        int result = 0;
+
+        while (i <= n)
+        {
+            result += i;
+            i++;
+        }
+
+        return result;
+    }
+
+    public static int getProduct(int n) {
+        int i = 1;
+        int result = 1;
+
+        while (i <= n)
+        {
+            result *= i;
+            i++;
+        }
+
+        return result;
     }
 
     public static boolean isInteger(String s) {
